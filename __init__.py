@@ -1,4 +1,5 @@
-from .mdcr import Mdcr
+from .mdcr_lpm import Mdcr_LPM
+
 
 def create_instance(c_instance):
-	return Mdcr(c_instance)
+    return Mdcr_LPM(c_instance)

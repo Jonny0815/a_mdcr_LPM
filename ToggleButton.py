@@ -93,7 +93,7 @@ class ToggleButton(InputControlElement, ButtonElementMixin):
         super(ToggleButton, self).__init__(msg_type, channel, identifier, *a, **k)
         self.__is_momentary = bool(is_momentary)
         self._last_received_value = -1
-        self._toggle = 1
+        self._toggle = 0
         self._undo_step_handler = undo_step_handler
         self._skin = skin
 
@@ -121,6 +121,7 @@ class ToggleButton(InputControlElement, ButtonElementMixin):
 
     # dirty fix, clean me up some time!
     def receive_value(self, value):
+        self.canonical_parent.show_message(str(value))
         if self._toggle == 1:
             self._toggle = 0
             super(ToggleButton, self).receive_value(0)

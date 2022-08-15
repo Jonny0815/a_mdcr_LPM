@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/a_mdcr.iml" filepath="$PROJECT_DIR$/.idea/a_mdcr.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/a_mdcr_LPM.iml" filepath="$PROJECT_DIR$/.idea/a_mdcr_LPM.iml" />
     </modules>
   </component>
 </project>
